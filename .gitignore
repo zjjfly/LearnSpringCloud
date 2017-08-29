@@ -14,9 +14,8 @@
 *.iws
 *.iml
 *.ipr
-/microservice-*/build/
 /microservice-*/out/
-src
+/src/
 
 ### NetBeans ###
 nbproject/private/
