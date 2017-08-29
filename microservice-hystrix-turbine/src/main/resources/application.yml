@@ -1,0 +1,17 @@
+spring:
+  application:
+    name: microservice-hystrix-turbine
+server:
+  port: 8031
+security:
+  basic:
+    enabled: false
+turbine:
+  aggregator:
+    clusterConfig: default
+  app-config: microservice-consumer-feign-hystrix,microservice-consumer-ribbon-hystrix
+  cluster-name-expression: new String("default")
+eureka:
+  client:
+    service-url:
+      defualtZone: http://discovery:8761/eureka/

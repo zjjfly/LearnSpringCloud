@@ -1,0 +1,11 @@
+spring:
+  application:
+    name: microservice-consumer-feign
+server:
+  port: 8020
+eureka:
+  client:
+    service-url:
+      defualtZone: http://discovery:8761/eureka
+  instance:
+    prefer-ip-address: true

@@ -1,0 +1,15 @@
+spring:
+  application:
+    name: microservice-consumer-feign-hystrix
+server:
+  port: 8021
+eureka:
+  client:
+    service-url:
+      defualtZone: http://discovery:8761/eureka
+  instance:
+    hostname: feign
+#Dalston版本开始需要加入下面的配置才能在feign中启用hystrix
+feign:
+  hystrix:
+    enabled: true

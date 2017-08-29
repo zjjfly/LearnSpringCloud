@@ -1,0 +1,12 @@
+spring:
+  application:
+    name: microservice-consumer-ribbon-hystrix
+server:
+  port: 8011
+eureka:
+  client:
+    service-url:
+      defualtZone: http://discovery:8761/eureka
+  instance:
+  #为了让turbine能显示多张图标，需要为配置不同的hostname
+    hostname: ribbon
