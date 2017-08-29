@@ -1,0 +1,10 @@
+include 'microservice-discovery'
+include 'microservice-provider'
+include 'microservice-consumer-ribbon'
+include 'microservice-consumer-feign'
+include 'microservice-consumre-ribbon-hystrix'
+include 'microservice-consumer-feign-hystrix'
+include 'microservice-hystrix-dashboard'
+include 'microservice-hystrix-turbine'
+include 'microservice-common'
+
