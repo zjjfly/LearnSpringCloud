@@ -1,0 +1,11 @@
+spring:
+  application:
+    name: microservice-config-client
+  cloud:
+    config:
+      profile: dev
+      label: master
+      uri: http://config-server:8040/
+endpoints:
+  refresh:
+    enabled: true

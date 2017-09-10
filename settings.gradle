@@ -7,4 +7,6 @@ include 'microservice-consumer-feign-hystrix'
 include 'microservice-hystrix-dashboard'
 include 'microservice-hystrix-turbine'
 include 'microservice-common'
+include 'microserivce-config-server'
+include 'microservice-config-client'
 
