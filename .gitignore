@@ -24,4 +24,4 @@ nbbuild/
 dist/
 nbdist/
 .nb-gradle/
-/microserivce-config-server/src/main/resources/application.yml
+/microservice-config-server/src/main/resources/application.yml

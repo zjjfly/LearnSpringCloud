@@ -12,8 +12,10 @@ import org.springframework.scheduling.annotation.Scheduled;
 public class AutoRefresh {
     @Autowired
     private RefreshEndpoint refreshEndpoint;
+
     @Scheduled(cron = "0 * * * * *")
     public void refresh(){
         refreshEndpoint.refresh();
     }
+
 }
