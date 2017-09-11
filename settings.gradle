@@ -9,4 +9,6 @@ include 'microservice-hystrix-turbine'
 include 'microservice-common'
 include 'microservice-config-server'
 include 'microservice-config-client'
+include 'microservice-config-server-eureka'
+include 'microservice-config-client-eureka'
 

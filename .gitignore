@@ -25,3 +25,4 @@ dist/
 nbdist/
 .nb-gradle/
 /microservice-config-server/src/main/resources/application.yml
+/microservice-config-server-eureka/src/main/resources/application.yml
