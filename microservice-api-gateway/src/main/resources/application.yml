@@ -1,0 +1,19 @@
+spring:
+  application:
+    name: microservice-api-gateway
+server:
+  port: 8060
+eureka:
+  instance:
+    hostname: gateway
+  client:
+    service-url:
+          defaultZone: http://discovery:8761/eureka/ #http://GATEWAY:GATEWAY_PORT/想要访问的Eureka服务id的小写/**会被路由到http://想要访问的Eureka服务的host:该服务端口/**
+zuul:
+  routes:
+    user: #这个可以随便写,但需要是唯一的,相当于一个绑定的id
+      path: /user/**
+      service-id: microservice-provider #想要访问的服务的id
+  ignored-services: microservice-consumer-ribbon-hystrix #想要忽略的服务的id
+
+
